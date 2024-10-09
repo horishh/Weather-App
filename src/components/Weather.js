@@ -20,7 +20,7 @@ const Weather = () => {
   const [weather, setWeather] = useState(null); 
   
   // OpenWeatherMap API key
-  // const api = process.env.REACT_APP_API_KEY; 
+  const api = 'd49ab1ddfcfcd3650b1ba51e41aea8c3'; 
 
   /**
    * Function to fetch weather data from OpenWeatherMap API based on the city.
@@ -31,7 +31,7 @@ const Weather = () => {
     try {
       // Send a GET request to the OpenWeatherMap API using the city name and API key
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${process.env.REACT_APP_API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api}&units=metric`
       );
       setWeather(response.data); // Store the weather data in state
       console.log(response.data); // Log the data for debugging purposes
