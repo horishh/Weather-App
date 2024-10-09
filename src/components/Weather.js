@@ -14,7 +14,7 @@ import SearchForm from "./SearchForm";
  */
 const Weather = () => {
   // State to store the city input by the user
-  const [city, setCity] = useState(""); 
+  const [city, setCity] = useState("London"); 
   
   // State to store the weather data fetched from the API
   const [weather, setWeather] = useState(null); 
