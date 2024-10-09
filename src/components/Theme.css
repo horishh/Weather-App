@@ -1,0 +1,68 @@
+:root{
+  --dark-bg-color: #272626;
+  --dark-font-color: #fff;
+}
+
+
+body.light {
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+body.dark input::placeholder{
+  color: var(--dark-font-color);
+}
+  
+  body.dark {
+    background-color: #111;
+    color: var(--dark-font-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark button {
+    background-color: var(--dark-font-color);
+    color: var(--dark-font-color);
+  }
+  
+  body.dark .weatherBody{
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+  }
+
+  body.dark .weatherBody span{
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+  }
+  
+  body.dark .cityName{
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+  }
+  
+  body.dark .headerDay{
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+  }
+  
+  body.dark .inputField input{
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+  }
+  
+  body.dark form button{
+    background-color: #57bee6;
+    color: var(--dark-font-color);
+  }
+
+  body.dark .themeBtn{
+    background-color: var(--dark-bg-color);
+  }
+  
+  .themeBtn{
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.40);
+    background-color: transparent;
+    cursor: pointer;
+  }
